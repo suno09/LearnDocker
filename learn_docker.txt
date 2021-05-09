@@ -1,0 +1,24 @@
+# after create Dockerfile set commands
+$ docker build -t <image_name>:<version> .
+
+# show images
+$ docker images
+
+# run new container from image
+$ docker run <image_name>:<version> --name <container_name>
+
+# show running container (-a running and stopped)
+$ docker ps
+
+# when change code build another image with upgrade version
+$ docker build -t <image_name>:<version>+ .
+
+# run in background without opening second tab
+$ docker run -d <image_name>:<version>+ --name <container_name>
+
+$ show log (print result)
+$ docker logs <container-id>
+
+# stop container
+$ docker stop <container_id>
+
